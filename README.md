@@ -15,7 +15,7 @@ USE GUIDE: 1. Make sure all packages are installed. 2. Make sure the dataset is 
 
 NOTE: This should run without any trained model files as it automatically trains a new model each time anyways.
 
-PROGRAM PROBLEM ACKNOWLEDGEMENT: We understand that the program is not user friendly but when we tried to make it more user friendly for somereason the accuracy of the model tanked. There was not enough time to find out way the accuracy tanked so the we did not update the program with our planned features to make it more user friendly.
+PROGRAM PROBLEM ACKNOWLEDGEMENT: We understand that the program is not user friendly but when we tried to make it more user friendly for somereason the accuracy of the model tanked. There was not enough time to find out wy the accuracy tanked so the we did not update the program with our planned features to make it more user friendly.
 
 BEST MODEL METRICS: 
 Accuracy: 0.9464
