@@ -1,0 +1,2 @@
+Package requirements for OM_1.0.0
+cmath, phase, torch, torchvision, torch.utils.data, os, torch.nn, torchvision.models, torch.optim, gdown, PIL, Image, torchvison
