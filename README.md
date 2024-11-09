@@ -1,32 +1,26 @@
-Image classification with PyTorch
+Team Name: Chao Machina
+Team Member 1 (leader): Phillip Crawford, pjc216@msstate.edu
+Team Member 2: Pacey Whitt, jpw464@msstate.edu
 
-This project provides a framework for training a image classification model using PyTorch. 
-The code is designed to use a dataset of Mississippi State University building.
+APPROACH: The approach was to the resnet18 model with pytorch. Neither of us were familar with python or AI so we both used internet (youtube, python docs, stackoverflow.com, chatGPT) resources to learn how to program this.
+Here is the order of what we programmed:
+1. image transformations
+2. model definition
+3. model training
+4. model evaluation
+5. data loading
+6. building identification
 
-Functions
+USE GUIDE: 1. Make sure all packages are installed. 2. Make sure the dataset is installed. 3. Set data_dir to the file location to where your dataset is. 4. Ensure your train and val folders are set up and make sure the carpenter hall are jpg and not heic. 5. Set test_image_path to the image that you want the AI to identify the building in.
 
-get_data_transforms()
-Defines data augmentation and normalization transformations for the training and validation datasets.
+NOTE: This should run without any trained model files as it automatically trains a new model each time anyways.
 
-load_data(data_dir, batch_size=32)
-Loads the dataset from the specified directory, applying transformations and creating data loaders for both training and validation data.
+PROGRAM PROBLEM ACKNOWLEDGEMENT: We understand that the program is not user friendly but when we tried to make it more user friendly for somereason the accuracy of the model tanked. There was not enough time to find out way the accuracy tanked so the we did not update the program with our planned features to make it more user friendly.
 
-create_model(num_classes)
-Loads a pre-trained ResNet18 model and adjusts the final fully connected layer to match the specified number of classes.
-
-train_model(model, dataloaders, criterion, optimizer, num_epochs=10, dataset_sizes=None)
-Trains the model for a specified number of epochs, computing and displaying the loss and accuracy for each epoch. The model’s best weights are saved based on validation accuracy.
-
-evaluate_model(model, dataloader, criterion, class_names)
-Evaluates the model on the validation set, printing metrics such as accuracy, precision, recall, F1 score, and log loss.
-
-Training 
-
-The model is trained for 10 epochs with data augmentation and normalized inputs. 
-
-Dependencies 
-
-Python3
-,PyTorch
-,Torchvision
-,gdown 
+BEST MODEL METRICS: 
+Accuracy: 0.9464
+Precision: 0.9339
+Recall: 0.9464
+F1 Score: 0.9320
+Log Loss: 0.4572
+(after 9 epochs)
