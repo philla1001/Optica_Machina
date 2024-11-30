@@ -17,10 +17,32 @@ NOTE: This should run without any trained model files as it automatically trains
 
 PROGRAM PROBLEM ACKNOWLEDGEMENT: We understand that the program is not user friendly but when we tried to make it more user friendly for somereason the accuracy of the model tanked. There was not enough time to find out wy the accuracy tanked so the we did not update the program with our planned features to make it more user friendly.
 
-BEST MODEL METRICS: 
+BEST MODEL METRICS:
+Metrics from right after the model is trained:
 Accuracy: 0.9464
 Precision: 0.9339
 Recall: 0.9464
 F1 Score: 0.9320
 Log Loss: 0.4572
-(after 9 epochs)
+(after 10 epochs)
+
+Metrics from the best model being evaluated by the evaluation script:
+Accuracy: 0.3401
+Precision: 0.2331
+Recall: 0.3401
+F1-Score: 0.2609
+Log Loss: 15.6997
+NOTE: The evaluation script was rushed due to main dev's computer being broken for several days and I faced a lot of errors when trying to use the eval script so it might be inaccurate.
+Classification report from eval script:
+                                 precision    recall  f1-score   support
+
+Campus Vision Challenge Dataset       0.00      0.00      0.00       158
+                          train       0.35      0.27      0.31       168
+                            val       0.34      0.73      0.46       168
+
+                       accuracy                           0.34       494
+                      macro avg       0.23      0.33      0.26       494
+                   weighted avg       0.23      0.34      0.26       494
+                   
+
+
