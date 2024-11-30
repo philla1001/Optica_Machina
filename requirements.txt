@@ -1,2 +1,11 @@
-Package requirements for OM_1.0.0
-cmath, phase, torch, torchvision, torch.utils.data, os, torch.nn, torchvision.models, torch.optim, gdown, PIL, Image, torchvison
+Dependencies for OM_1.0.0
+
+torch
+torchvision
+torchaudio
+timm
+Pillow
+numpy
+matplotlib
+scikit-learn
+seaborn
